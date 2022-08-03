@@ -9,20 +9,21 @@ int main ( ) {
 	for (int i = 0; i < n; i++) {
 		scanf("%d", &a[i]);
 	}
-	int min = a[0];
+	int min = 0;
 	for (int i = 1; i < n; i++) {  
-		if ( a[i] >= 0 ){
+		if ( a[i] > 0 ){
 		
 			min = a[i];
+			break;
 			}
 		} 
 	for (int i = 0; i < n; i++) {  
-		if ( a[i] < min && a[i] >= 0 ){
+		if ( a[i] < min && a[i] > 0 ){
 		
 			min = a[i];
 			}
 		} 
-		if ( min < 0) { printf ( " khong co so duong trong mang");
+		if ( min = 0) { printf ( " khong co so duong trong mang");
 	} else {
 		printf ( "so duong nho nhat  la %d \n", min);
 	}

@@ -15,9 +15,10 @@ int main ( ) {
 	int t=0;
 	for (int i = 0; i < n; i++) {  
 		
-		if ( a[i]  == x ) {      // dieu kien so le o vi tri chan
+		if ( a[i]  == x ) {      // dieu kien tim x
 			printf( " co %d trong mang,  vi tri   la  %d \n", x,i);   
-			t++;   // tim tong so le
+			t++;   
+			break;
 		}
 		}
 	if ( t == 0) { printf (" khong co %d trong mang \n", x);

@@ -23,7 +23,9 @@ int main ( ) {
 		  else {
 		  	S += a[i];
 		  }}
-      
+      	if ( max <= S) {
+	  		max = S;
+		  }
 		printf ( " tong chuoi   so duong  lon nhat  la %d \n", max);
 
 	return 0;

@@ -14,18 +14,14 @@ int main ( ) {
 	int max = 0;
 	for (int i = 0; i < n; i++) {  
 	   if ( a[i] < 0) {
-	  	if ( max <= S) {
-	  		max = S;
-		  }
 		  S = 0;}
 		  else {
 		  	S++;
-		  }}
-
-      	if ( max <= S) {
+		  	if ( S > max) {
 	  		max = S;
 		  }
-		  
+		  }}
+
 		printf ( "so luong cac so duong lien ke lon nhat  la %d \n", max);
 
 	return 0;

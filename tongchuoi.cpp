@@ -15,17 +15,16 @@ int main ( ) {
 	
 	for (int i = 0; i < n; i++) {  
 	  
-	  if ( a[i] < 0) {
+	  if ( a[i] > 0) {
+	  	S+= a[i];
 	  	if ( max < S) {
 	  		max = S;
 		  }
-		  S = 0;}
+		 }
 		  else {
-		  	S += a[i];
+		  	S = 0;
 		  }}
-      	if ( max <= S) {
-	  		max = S;
-		  }
+
 		printf ( " tong chuoi   so duong  lon nhat  la %d \n", max);
 
 	return 0;
